@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600;700&family=Lato:wght@100;300;400&family=Mochiy+Pop+P+One&family=Raleway:ital,wght@0,400;1,100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  margin: auto;
+}
+
+.toolbar span {
+  width: 90px;
+  height: 28px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352F;
+  flex-grow: 0;
+  padding: 10px 0 10px 12px;
+}
+
+.btn {
+  padding: 8px;
+  background: #FFFFFF;
+
+}
+
+.btn-tertiary {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  padding-right: 24px;
+}
+
+.headline {
+  background: url(Images/header-illsutration-mobile@2x.svg) 50% 0% no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline h1,
+.headline div {
+  width: 327px;
+  font-family: Inter;
+  text-align: center;
+  color: #172B4D;
+  flex-grow: 0;
+}
+
+.headline h1 {
+  height: 192px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 58px 0px;
+}
+
+.headline div {
+  height: 164px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.h1-span {
+  display: block;
+  color: #36B37F;
+}
+
+.lets-connect {
+  width: 170.17px;
+  height: 20px;
+  flex-grow: 0;
+  margin: 58px 0px;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.btn-secondary {
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  border: 1px solid #DFE1E6;
+}
