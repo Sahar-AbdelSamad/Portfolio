@@ -1,24 +1,12 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600;700&family=Lato:wght@100;300;400&family=Mochiy+Pop+P+One&family=Raleway:ital,wght@0,400;1,100&display=swap');
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .toolbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 375px;
   margin: auto;
 }
@@ -31,9 +19,7 @@
   font-size: 20px;
   line-height: 28px;
   color: #28352F;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  flex-grow: 0;
   padding: 10px 0 10px 12px;
 }
 
@@ -52,19 +38,10 @@
 
 .headline {
   background: url(Images/header-illsutration-mobile@2x.svg) 50% 0% no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .headline h1,
@@ -73,9 +50,7 @@
   font-family: Inter;
   text-align: center;
   color: #172B4D;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  flex-grow: 0;
 }
 
 .headline h1 {
@@ -100,20 +75,12 @@
 .lets-connect {
   width: 170.17px;
   height: 20px;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  flex-grow: 0;
   margin: 58px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
 
