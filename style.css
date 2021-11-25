@@ -14,25 +14,24 @@
 .toolbar span {
   width: 90px;
   height: 28px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352F;
+  color: #28352f;
   flex-grow: 0;
   padding: 10px 0 10px 12px;
 }
 
 .btn {
   padding: 8px;
-  background: #FFFFFF;
-
+  background: #fff;
 }
 
 .btn-tertiary {
   width: 40px;
   height: 40px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   padding-right: 24px;
 }
 
@@ -47,9 +46,9 @@
 .headline h1,
 .headline div {
   width: 327px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   flex-grow: 0;
 }
 
@@ -58,7 +57,7 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 .headline div {
@@ -69,14 +68,14 @@
 
 .h1-span {
   display: block;
-  color: #36B37F;
+  color: #36b37f;
 }
 
 .lets-connect {
   width: 170.17px;
   height: 20px;
   flex-grow: 0;
-  margin: 58px 0px;
+  margin: 58px 0;
   display: flex;
   gap: 10%;
   justify-content: center;
@@ -92,5 +91,5 @@ li {
   width: 40px;
   height: 40px;
   border-radius: 32px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
 }
