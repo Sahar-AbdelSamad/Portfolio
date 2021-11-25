@@ -45,7 +45,8 @@
 }
 
 .headline h1 {
-  margin: 58px 0 0 0;
+  margin-top: 58px;
+  margin-bottom: 0;
 }
 
 .headline h1,
@@ -75,7 +76,8 @@
 .headline h3 {
   display: block;
   color: #36b37f;
-  margin:0 0 58px 0;
+  margin-bottom: 58px;
+  margin-top: 0;
 }
 
 .lets-connect {
