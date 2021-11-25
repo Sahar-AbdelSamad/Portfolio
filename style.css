@@ -11,7 +11,8 @@
   margin: auto;
 }
 
-.toolbar span {
+.logo {
+  text-decoration: none;
   width: 90px;
   height: 28px;
   font-family: Inter, sans-serif;
@@ -44,7 +45,7 @@
 }
 
 .headline h1,
-.headline div {
+.headline p {
   width: 327px;
   font-family: Inter, sans-serif;
   text-align: center;
@@ -60,7 +61,7 @@
   margin: 58px 0;
 }
 
-.headline div {
+.headline p {
   height: 164px;
   font-size: 20px;
   line-height: 28px;
