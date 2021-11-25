@@ -44,7 +44,12 @@
   justify-content: center;
 }
 
+.headline h1 {
+  margin: 58px 0 0 0;
+}
+
 .headline h1,
+.headline h3,
 .headline p {
   width: 327px;
   font-family: Inter, sans-serif;
@@ -53,23 +58,24 @@
   flex-grow: 0;
 }
 
-.headline h1 {
-  height: 192px;
+.headline h1,
+.headline h3 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  margin: 58px 0;
 }
 
 .headline p {
   height: 164px;
   font-size: 20px;
   line-height: 28px;
+  margin-top: 0;
 }
 
-.h1-span {
+.headline h3 {
   display: block;
   color: #36b37f;
+  margin:0 0 58px 0;
 }
 
 .lets-connect {
