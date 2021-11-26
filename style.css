@@ -46,10 +46,9 @@
 
 .headline h1 {
   margin-top: 58px;
-  margin-bottom: 0;
 }
 
-.headline h1,
+.primary-text,
 .headline h3,
 .headline p {
   width: 327px;
@@ -57,9 +56,10 @@
   text-align: center;
   color: #172b4d;
   flex-grow: 0;
+  margin: auto;
 }
 
-.headline h1,
+.primary-text,
 .headline h3 {
   font-weight: bold;
   font-size: 40px;
@@ -101,4 +101,188 @@ li {
   height: 40px;
   border-radius: 32px;
   border: 1px solid #dfe1e6;
+  margin-bottom: 22px;
+}
+
+/* Works Section */
+
+.indicator {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+  margin: 24px auto 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.item {
+  position: relative;
+  width: 327px;
+  height: 474px;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin-left: 26px;
+  margin-right: 22px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  height: 222px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 249px;
+  left: calc(50% - 325px / 2);
+}
+
+.item h4 {
+  width: 295px;
+  height: 57px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+  margin: 16px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tags h6 {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  margin: 0;
+}
+
+.button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 29px;
+  text-decoration: none;
+}
+
+/* About Myself section */
+
+.about-myself {
+  margin: 20px auto 0;
+  background: url(Images/about-me-illustration.svg) 50% 0% no-repeat, url("Images/Mask-Group.svg") 60% 0% no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-text-about-myself {
+  margin-top: 48px;
+}
+
+.button-about-me {
+  width: 159px;
+  margin: auto;
+}
+
+.supporting-text-about-me {
+  width: 351px;
+  height: 189px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 24px auto;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 59px;
+  padding: 0;
+}
+
+.categories h4 {
+  width: 337px;
+  height: 32px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 24px 0;
+}
+
+.about-myself-items {
+  width: 327px;
+  height: 352px;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  padding-bottom: 24px;
+}
+
+.about-myself-items img {
+  margin-top: 40px;
+  padding-left: 99px;
+}
+
+.tags-about-me {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags-about-me h6 {
+  padding: 12px;
+  color: #36b37e;
+  margin: 0;
+  background: #fff;
+  border-radius: 8px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.button:active {
+  background: #008552;
 }
