@@ -269,6 +269,7 @@ li {
 
 .tags-about-me h6 {
   padding: 12px;
+  color: #36b37e;
   margin: 0;
   background: #fff;
   border-radius: 8px;
@@ -276,7 +277,6 @@ li {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #36b37e;
 }
 
 .button:hover {
