@@ -44,8 +44,8 @@
   justify-content: center;
 }
 
-.primary-text {
-  margin: 58px auto 0 auto;
+.headline h1 {
+  margin-top: 58px;
 }
 
 .primary-text,
@@ -56,6 +56,7 @@
   text-align: center;
   color: #172b4d;
   flex-grow: 0;
+  margin: auto;
 }
 
 .primary-text,
@@ -104,10 +105,6 @@ li {
 }
 
 /* Works Section */
-
-.primary-text-works {
-  margin-top: 0;
-}
 
 .indicator {
   width: 48px;
@@ -187,7 +184,6 @@ li {
   padding: 12px;
   width: 122px;
   height: 48px;
-  bottom: 8px;
   background: #36b37f;
   border-radius: 4px;
   font-family: Inter, sans-serif;
@@ -196,6 +192,97 @@ li {
   line-height: 24px;
   color: #fff;
   margin-top: 29px;
+  text-decoration: none;
 }
 
 /* About Myself section */
+
+.about-myself {
+  margin: 20px auto 0;
+  background: url(Images/about-me-illustration.svg) 50% 0% no-repeat, url("Images/Mask-Group.svg") 60% 0% no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-text-about-myself {
+  margin-top: 48px;
+}
+
+.button-about-me {
+  width: 159px;
+  margin: auto;
+}
+
+.supporting-text-about-me {
+  width: 351px;
+  height: 189px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 24px auto;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 59px;
+  padding: 0;
+}
+
+.categories h4 {
+  width: 337px;
+  height: 32px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 24px 0;
+}
+
+.about-myself-items {
+  width: 327px;
+  height: 352px;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  padding-bottom: 24px;
+}
+
+.about-myself-items img {
+  margin-top: 40px;
+  padding-left: 99px;
+}
+
+.tags-about-me {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags-about-me h6 {
+  padding: 12px;
+  margin: 0;
+  background: #fff;
+  border-radius: 8px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.button:active {
+  background: #008552;
+}
