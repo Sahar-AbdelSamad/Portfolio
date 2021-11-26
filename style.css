@@ -44,12 +44,11 @@
   justify-content: center;
 }
 
-.headline h1 {
-  margin-top: 58px;
-  margin-bottom: 0;
+.primary-text {
+  margin: 58px auto 0 auto;
 }
 
-.headline h1,
+.primary-text,
 .headline h3,
 .headline p {
   width: 327px;
@@ -59,7 +58,7 @@
   flex-grow: 0;
 }
 
-.headline h1,
+.primary-text,
 .headline h3 {
   font-weight: bold;
   font-size: 40px;
@@ -101,4 +100,102 @@ li {
   height: 40px;
   border-radius: 32px;
   border: 1px solid #dfe1e6;
+  margin-bottom: 22px;
 }
+
+/* Works Section */
+
+.primary-text-works {
+  margin-top: 0;
+}
+
+.indicator {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+  margin: 24px auto 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.item {
+  position: relative;
+  width: 327px;
+  height: 474px;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin-left: 26px;
+  margin-right: 22px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  height: 222px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 249px;
+  left: calc(50% - 325px / 2);
+}
+
+.item h4 {
+  width: 295px;
+  height: 57px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+  margin: 16px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tags h6 {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  margin: 0;
+}
+
+.button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  bottom: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 29px;
+}
+
+/* About Myself section */
