@@ -1,6 +1,6 @@
 # Portfolio-setup-and-mobile-version-skeleton
 
-> This is the first milestone in the process of creating my portfolio website.
+> This is my portfolio website.
 
 ![screenshot](Images/Screenshot.png)
 
@@ -18,14 +18,14 @@ This website is a setup and mobile version skeleton of my portfolio.
 👤 **Sahar Abdel Samad**
 
 - GitHub: [@sahar-abdelsamad](https://github.com/Sahar-AbdelSamad)
-- Twitter: [@abdelsamadsahar](https://twitter.com/home)
+- Twitter: [@abdelsamadsahar](https://twitter.com/AbdelSamadSahar)
 - LinkedIn: [abdel-samad-sahar](https://www.linkedin.com/in/abdel-samad-sahar-353977223/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Sahar-AbdelSamad/Portfolio-setup-and-mobile-version-skeleton/issues).
 
 ## Show your support
 
