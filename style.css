@@ -294,6 +294,7 @@ li {
 }
 
 .form h1{
+  font-family: Inter, sans-serif;
   text-align: center;
   font-size: 40px;
   color: #172B4D;
@@ -308,12 +309,29 @@ form{
 }
 input{
   height: 48px;
+  border: 1px solid #c1c7d0;
   border-radius: 8px;
   margin: 20px 24px;
+  font-family: Inter, sans serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6B778C;
+  padding: 15px 16px;
 }
 textarea{
-  height: 170px;
-  margin: 20px 24px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  width: 327px;
+  height: 114px;  
+  margin: 24px;
   border-radius: 8px;
+  border: 1px solid #60C095;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
 
 }
