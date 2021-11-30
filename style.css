@@ -286,3 +286,34 @@ li {
 .button:active {
   background: #008552;
 }
+
+.form{
+  margin: 0 auto;
+  width: 375px;
+
+}
+
+.form h1{
+  text-align: center;
+  font-size: 40px;
+  color: #172B4D;
+  font-weight: 700;
+  padding: 30px 30px;
+
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  height: 48px;
+  border-radius: 8px;
+  margin: 20px 24px;
+}
+textarea{
+  height: 170px;
+  margin: 20px 24px;
+  border-radius: 8px;
+
+}
