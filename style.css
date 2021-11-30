@@ -231,6 +231,7 @@ li {
   align-items: center;
   gap: 24px;
   margin-top: 59px;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -287,51 +288,82 @@ li {
   background: #008552;
 }
 
-.form{
+/* Contact form section */
+
+.form {
   margin: 0 auto;
   width: 375px;
-
+  background: url(Images/Frame.svg) 100% 65% no-repeat;
 }
 
-.form h1{
+.form h1 {
+  width: 327px;
+  height: 363px;
   font-family: Inter, sans-serif;
-  text-align: center;
+  font-weight: bold;
   font-size: 40px;
-  color: #172B4D;
-  font-weight: 700;
-  padding: 30px 30px;
-
-
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 60px 24px 34px;
 }
-form{
+
+form {
   display: flex;
   flex-direction: column;
 }
-input{
-  height: 48px;
-  border: 1px solid #c1c7d0;
-  border-radius: 8px;
-  margin: 20px 24px;
-  font-family: Inter, sans serif;
+
+input,
+textarea {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
+  height: 48px;
+  margin: 24px;
+  margin-bottom: 0;
   padding: 15px 16px;
 }
-textarea{
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  width: 327px;
-  height: 114px;  
-  margin: 24px;
-  border-radius: 8px;
-  border: 1px solid #60C095;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 4px;
 
+textarea {
+  width: 327px;
+  height: 114px;
+  padding: 12px;
+  border: 1px solid #60c095;
+  color: #091e42;
+  margin: 24px;
+}
+
+.button-form {
+  padding: 12px;
+  width: 129px;
+  margin: auto;
+  margin-bottom: 44px;
+}
+
+.lets-connect-footer {
+  margin: 0 auto;
+}
+
+.my-email {
+  width: 375px;
+  height: 189px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.indicator-footer {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin: 134px 121px 8px 120px;
 }
