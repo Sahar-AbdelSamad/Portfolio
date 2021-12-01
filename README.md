@@ -2,7 +2,7 @@
 
 > This is my portfolio website.
 
-![screenshot](Images/Screenshot.png)
+![screenshot](Images/Profile-project.png)
 
 This website is a setup and mobile version skeleton of my portfolio.
 
