@@ -62,6 +62,10 @@
 
 .headline h1 {
   margin-top: 58px;
+  position: relative;
+  animation-name: primaryText;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .primary-text,
@@ -74,6 +78,10 @@
 .headline p {
   font-size: 20px;
   line-height: 28px;
+  position: relative;
+  animation-name: h3Text;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .headline h3 {
@@ -129,6 +137,7 @@ li {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  transition: transform 0.1s;
 }
 
 .flex-container {
@@ -360,32 +369,14 @@ textarea {
 
 /* Add transition and animation */
 
-.headline h1 {
-  position: relative;
-  animation-name: primaryText;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+@keyframes primaryText {
+  0% { left: -100%; }
+  100% { left: 0; }
 }
 
-.headline h3 {
-  position: relative;
-  animation-name: h3Text;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes primaryText{
-  0%{left: -100%}
-  100%{left: 0}
-}
-
-@keyframes h3Text{
-  0%{left: 100%}
-  100%{left: 0}
-}
-
-.item {
-  transition: transform 0.1s;
+@keyframes h3Text {
+  0% { left: 100%; }
+  100% { left: 0; }
 }
 
 .item:hover {
@@ -416,7 +407,7 @@ textarea {
     align-items: center;
   }
 
-  .nav-ul{
+  .nav-ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -431,9 +422,6 @@ textarea {
     line-height: 20px;
     color: #344563;
     padding: 10px 12px;
-  }
-
-  .nav-ul a {
     text-decoration: none;
   }
 
