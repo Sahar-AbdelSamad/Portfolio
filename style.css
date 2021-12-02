@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .toolbar {
@@ -56,20 +58,6 @@
   text-align: center;
   color: #172b4d;
   margin: 0 24px;
-}
-
-/* animation and transition */
-
-.primary-text{
-  position: relative;
-  animation-name: primaryText;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes primaryText{
-  0%{ left: -500px}
-  100%{left: 0}
 }
 
 .headline h1 {
@@ -370,6 +358,40 @@ textarea {
   margin: 134px auto 8px;
 }
 
+/* Add transition and animation */
+
+.headline h1 {
+  position: relative;
+  animation-name: primaryText;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.headline h3 {
+  position: relative;
+  animation-name: h3Text;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes primaryText{
+  0%{left: -100%}
+  100%{left: 0}
+}
+
+@keyframes h3Text{
+  0%{left: 100%}
+  100%{left: 0}
+}
+
+.item {
+  transition: transform 0.1s;
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
 /* Desktop Version */
 
 @media screen and (min-width: 992px) {
@@ -388,22 +410,27 @@ textarea {
   }
 
   .toolbar {
-    display: block;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .nav-ul {
+  .nav-ul{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+  }
+
+  .nav-ul a {
     height: 40px;
     font-family: Inter, sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    margin: 0;
-    padding: 0;
+    padding: 10px 12px;
   }
 
   .nav-ul a {
