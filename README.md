@@ -1,8 +1,13 @@
 # Portfolio-setup-and-mobile-version-skeleton
 
-> This is my portfolio website.
+> This is a Desktop and Mobile version of my Portfolio Website.
 
+## Below is the Desktop version
 ![screenshot](Images/Profile-project.png)
+
+
+## And this is the Mobile version
+![screenshot](Images/Profile-project-mobile-version.png)
 
 This website is a setup and mobile version skeleton of my portfolio.
 
@@ -13,7 +18,7 @@ This website is a setup and mobile version skeleton of my portfolio.
 - VSCode
 
 
-## Authors
+## Author
 
 👤 **Sahar Abdel Samad**
 
