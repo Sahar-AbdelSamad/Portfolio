@@ -10,8 +10,13 @@
 
 <body>
     <header class="toolbar">
+        <ul class="nav-ul">
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
         <a href="#" class="logo">Welcome</a>
-        <nav>
+        <nav class="top-navigation">
             <button type="button" class="btn btn-tertiary">
                 <img src="Images/Normal-Button/Tertiary/Icons/Union.svg" alt="union icon">
             </button>
@@ -41,7 +46,7 @@
     </section>
     <!-- works section -->
     <section class="works">
-        <h1 class="primary-text">My Recent Works</h1>
+        <h2 class="primary-text">My Recent Works</h2>
         <p class="indicator"></p>
         <div class="grid-container">
             <div class="item">
@@ -120,12 +125,15 @@
     </section>
     <!-- about myself section -->
     <section class="about-myself">
-        <h1 class="primary-text primary-text-about-myself">About me</h1>
+        <h2 class="primary-text primary-text-about-myself">About me</h2>
         <p class="supporting-text-about-me"> I can help you build a product , feature
             or website Look through some of my work and experience!
             If you like what you see and have a project you need coded,
             don’t hestiate to contact me.</p>
-        <a href="#" class="button button-about-me">Get My Resume</a>
+        <div class="about-me-illustration-btn">
+            <img src="Images/about-me-illustration.svg" alt="illustration">
+            <a href="#" class="button button-about-me">Get My Resume</a>
+        </div>
         <ul class="categories">
             <li class="about-myself-items">
                 <img src="Images/icon-languages.svg" alt="icon for languages">
@@ -162,14 +170,18 @@
         </ul>
     </section>
     <!-- Form section -->
-    <footer class="form">
-        <h4>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
+    <section class="form">
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form action="https://formspree.io/f/mbjwrpbr" method="POST">
             <input type="text" placeholder="Full name" maxlength="30" name="fullname" required>
             <input type="email" placeholder="Email address" name="email" required>
             <textarea name="msg" maxlength="500" required>Enter text here</textarea>
             <button class="button button-form" type="submit">Get in touch</button>
         </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p class="hr"></p>
         <ul class="lets-connect lets-connect-footer">
             <li><a rel="noopener noreferrer" href="https://twitter.com/home?lang=en" target="_blank"><img
                         src="Images/twitter.svg" alt="twitter icon"></a></li>
