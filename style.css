@@ -92,12 +92,11 @@
 .lets-connect {
   width: 170.17px;
   height: 20px;
-  margin: 58px auto 62px;
   display: flex;
   gap: 10%;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  margin: 58px auto 62px;
 }
 
 li {
@@ -566,7 +565,7 @@ textarea {
   }
 
   .lets-connect-footer {
-    margin: 0 auto;
+    margin: 17.5px auto;
   }
 
   .my-email {
