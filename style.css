@@ -192,18 +192,13 @@ li {
 
 .about-myself {
   margin: 20px auto 0;
-  background: url("Images/Mask-Group.svg") 100% 0% no-repeat;
+  background: url("Images/Mask-Group.svg") 100% 0% no-repeat, url("Images/about-me-illustration.svg") 0% 25% no-repeat;
   display: flex;
   flex-direction: column;
 }
 
 .primary-text-about-myself {
   margin-top: 48px;
-}
-
-.about-me-illustration-btn {
-  display: flex;
-  justify-content: start;
 }
 
 .button-about-me {
@@ -397,6 +392,10 @@ textarea {
     padding: 0;
   }
 
+  .nav-ul a {
+    text-decoration: none;
+  }
+
   .top-navigation img {
     position: absolute;
     top: 0;
@@ -462,7 +461,12 @@ textarea {
   /* About Myself */
 
   .about-myself {
+    margin-top: 0;
     background: url(Images/Desktop/illustration-about-me-2-desktop.svg) 0% 20% no-repeat, url("Images/Desktop/illustration-about-me-desktop.svg") 100% 0% no-repeat;
+  }
+
+  .about-myself h2 {
+    margin-top: 0;
   }
 
   .supporting-text-about-me {
