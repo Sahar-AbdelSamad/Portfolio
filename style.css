@@ -58,6 +58,20 @@
   margin: 0 24px;
 }
 
+/* animation and transition */
+
+.primary-text{
+  position: relative;
+  animation-name: primaryText;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes primaryText{
+  0%{ left: -500px}
+  100%{left: 0}
+}
+
 .headline h1 {
   margin-top: 58px;
 }
