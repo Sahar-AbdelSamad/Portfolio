@@ -11,9 +11,9 @@
 <body>
     <header class="toolbar">
         <ul class="nav-ul">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="#about-myself">About</a></li>
+            <li><a href="#form">Contact</a></li>
         </ul>
         <a href="#" class="logo">Welcome</a>
         <nav class="top-navigation">
@@ -45,7 +45,7 @@
                 alt="down icon"></button>
     </section>
     <!-- works section -->
-    <section class="works">
+    <section class="works" id="works">
         <h2 class="primary-text">My Recent Works</h2>
         <p class="indicator"></p>
         <div class="grid-container">
@@ -124,16 +124,13 @@
         </div>
     </section>
     <!-- about myself section -->
-    <section class="about-myself">
+    <section class="about-myself" id="about-myself">
         <h2 class="primary-text primary-text-about-myself">About me</h2>
         <p class="supporting-text-about-me"> I can help you build a product , feature
             or website Look through some of my work and experience!
             If you like what you see and have a project you need coded,
             don’t hestiate to contact me.</p>
-        <div class="about-me-illustration-btn">
-            <img src="Images/about-me-illustration.svg" alt="illustration">
-            <a href="#" class="button button-about-me">Get My Resume</a>
-        </div>
+        <a href="#" class="button button-about-me">Get My Resume</a>
         <ul class="categories">
             <li class="about-myself-items">
                 <img src="Images/icon-languages.svg" alt="icon for languages">
@@ -170,12 +167,12 @@
         </ul>
     </section>
     <!-- Form section -->
-    <section class="form">
+    <section class="form" id="form">
         <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form action="https://formspree.io/f/mbjwrpbr" method="POST">
             <input type="text" placeholder="Full name" maxlength="30" name="fullname" required>
             <input type="email" placeholder="Email address" name="email" required>
-            <textarea name="msg" maxlength="500" required>Enter text here</textarea>
+            <textarea name="msg" maxlength="500" placeholder="Enter text here" required></textarea>
             <button class="button button-form" type="submit">Get in touch</button>
         </form>
     </section>
