@@ -63,9 +63,8 @@
 .headline h1 {
   margin-top: 58px;
   position: relative;
-  animation-name: primaryText;
+  animation-name: slidein-right;
   animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 .primary-text,
@@ -79,14 +78,15 @@
   font-size: 20px;
   line-height: 28px;
   position: relative;
-  animation-name: h3Text;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  animation: slidein-up 0.5s;
 }
 
 .headline h3 {
   color: #36b37f;
   margin-bottom: 58px;
+  position: relative;
+  animation-name: slidein-left;
+  animation-duration: 0.5s;
 }
 
 .lets-connect {
@@ -368,14 +368,19 @@ textarea {
 
 /* Add transition and animation */
 
-@keyframes primaryText {
+@keyframes slidein-right {
   0% { left: -100%; }
   100% { left: 0; }
 }
 
-@keyframes h3Text {
+@keyframes slidein-left {
   0% { left: 100%; }
   100% { left: 0; }
+}
+
+@keyframes slidein-up {
+  0% { bottom: -100%; }
+  100% { bottom: 0; }
 }
 
 .item:hover {
