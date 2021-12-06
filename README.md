@@ -17,10 +17,6 @@ This website is a setup and mobile version skeleton of my portfolio.
 - CSS
 - VSCode
 
-## Live Demo
-
-You can see [my page live here](https://sahar-abdelsamad.github.io/Portfolio-setup-and-mobile-version-skeleton/)
-
 ## Author
 
 👤 **Sahar Abdel Samad**
