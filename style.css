@@ -334,7 +334,7 @@ textarea {
   line-height: 24px;
   color: #6b778c;
   height: 48px;
-  margin: 24px auto 0;
+  margin: 24px 6.5% 0;
   padding: 15px 16px;
   width: 87%;
   transition: transform 0.06s;
@@ -352,7 +352,7 @@ textarea {
   height: 114px;
   padding: 12px;
   color: #091e42;
-  margin: 24px auto;
+  margin: 24px 6.5%;
   width: 87%;
 }
 
