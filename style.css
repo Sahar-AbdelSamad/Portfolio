@@ -71,8 +71,7 @@
 .headline h1 {
   margin-top: 58px;
   position: relative;
-  animation-name: slidein-right;
-  animation-duration: 0.5s;
+  animation: slidein-right 0.5s;
 }
 
 .primary-text,
@@ -93,8 +92,7 @@
   color: #36b37f;
   margin-bottom: 58px;
   position: relative;
-  animation-name: slidein-left;
-  animation-duration: 0.5s;
+  animation: slidein-left 0.5s;
 }
 
 .lets-connect {
