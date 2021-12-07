@@ -2,12 +2,8 @@
 
 > This is a Desktop and Mobile version of my Portfolio Website.
 
-## Below is the Desktop version
-![screenshot](Images/Profile-project.png)
-
-
-## And this is the Mobile version
-![screenshot](Images/Profile-project-mobile-version.png)
+## Below is a GIF showing my Portfolio
+![gif](Portfolio.gif)
 
 This website is a setup and mobile version skeleton of my portfolio.
 
