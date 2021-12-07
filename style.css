@@ -13,7 +13,7 @@
   top: 0;
 }
 
-.toolbargit::after {
+.toolbar::after {
   content: "";
   clear: both;
   display: table;
