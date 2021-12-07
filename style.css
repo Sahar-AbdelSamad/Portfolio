@@ -348,20 +348,20 @@ input:focus {
   transform: scale(1.01);
 }
 
-textarea:hover {
-  transform: scale(1.01);
-}
-
-textarea:focus {
-  transform: scale(1.01);
-}
-
 textarea {
   height: 114px;
   padding: 12px;
   color: #091e42;
   margin: 24px auto;
   width: 87%;
+}
+
+textarea:hover {
+  transform: scale(1.01);
+}
+
+textarea:focus {
+  transform: scale(1.01);
 }
 
 .button-form {
@@ -457,7 +457,7 @@ textarea {
     color: #344563;
     padding: 10px 12px;
     text-decoration: none;
-    transition: font-size background-color color 0.1s;
+    transition: font-size 0.1s, color 0.1s, background-color 0.1s;
   }
 
   .nav-ul a:hover {
@@ -466,7 +466,7 @@ textarea {
 
   .nav-ul a:focus {
     background-color: #172b4d;
-    color: #fff
+    color: #fff;
   }
 
   .top-navigation img {
