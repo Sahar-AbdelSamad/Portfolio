@@ -183,9 +183,15 @@
     <section class="form" id="form">
         <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form action="https://formspree.io/f/mbjwrpbr" method="POST">
-            <input type="text" placeholder="Full name" maxlength="30" name="fullname" required>
-            <input type="email" placeholder="Email address" name="email" required>
-            <textarea name="msg" maxlength="500" placeholder="Enter text here" required></textarea>
+            <label for="name">
+            <input type="text" id="name" placeholder="Full name" maxlength="30" name="fullname" required>
+        </label>
+            <label for="email">    
+        <input type="email" id="email" placeholder="Email address" name="email" required>
+        </label>
+            <label for="message">   
+        <textarea name="msg" id="message" maxlength="500" placeholder="Enter text here" required></textarea>
+            </label>
             <button class="button button-form" type="submit">Get in touch</button>
         </form>
     </section>
