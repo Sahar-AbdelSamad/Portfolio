@@ -52,7 +52,7 @@
 }
 
 .primary-text,
-.headline h3,
+.headline h2,
 .headline p {
   font-family: Inter, sans-serif;
   text-align: center;
@@ -68,7 +68,7 @@
 }
 
 .primary-text,
-.headline h3 {
+.headline h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -81,7 +81,7 @@
   animation: slidein-up 0.5s;
 }
 
-.headline h3 {
+.headline h2 {
   color: #36b37f;
   margin-bottom: 58px;
   position: relative;
@@ -444,7 +444,7 @@ textarea {
   }
 
   .headline h1,
-  .headline h3 {
+  .headline h2 {
     font-weight: 800;
     font-size: 48px;
     line-height: 60px;
