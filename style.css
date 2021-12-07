@@ -7,10 +7,16 @@
 }
 
 .toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.toolbargit::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .nav-ul {
@@ -19,15 +25,17 @@
 
 .logo {
   text-decoration: none;
-  width: 90px;
-  height: 28px;
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   color: #28352f;
-  flex-grow: 0;
   padding: 10px 0 10px 12px;
+  float: left;
+}
+
+.top-navigation {
+  float: right;
 }
 
 .btn {
@@ -291,6 +299,7 @@ li {
 
 .button:hover {
   box-shadow: 1px 4px 30px rgba(16, 227, 128, 0.384);
+  transform: scale(1.01);
 }
 
 .button:active {
@@ -421,12 +430,11 @@ textarea:focus {
 
 @media screen and (min-width: 992px) {
   body {
-    background: url("Images/Desktop/Header-llustration-desktop.svg") no-repeat;
     background-size: 100% auto;
   }
 
   .headline {
-    background: none;
+    background: url("Images/Desktop/Header-llustration-desktop.svg") no-repeat;
   }
 
   .logo,
@@ -439,6 +447,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
   }
 
   .nav-ul {
