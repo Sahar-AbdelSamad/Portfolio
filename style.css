@@ -19,7 +19,7 @@
   display: table;
 }
 
-.nav-ul {
+.top-navigation {
   display: none;
 }
 
@@ -34,16 +34,13 @@
   float: left;
 }
 
-.top-navigation {
-  float: right;
-}
-
 .btn {
   padding: 8px;
   background: #fff;
 }
 
 .btn-tertiary {
+  float: right;
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
@@ -448,14 +445,14 @@ textarea:focus {
     position: fixed;
   }
 
-  .nav-ul {
+  .nav-ul-desktop {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
   }
 
-  .nav-ul a {
+  .nav-ul-desktop a {
     height: 40px;
     font-family: Inter, sans-serif;
     font-weight: 600;
@@ -467,16 +464,16 @@ textarea:focus {
     transition: font-size 0.1s, color 0.1s, background-color 0.1s;
   }
 
-  .nav-ul a:hover {
+  .nav-ul-desktop a:hover {
     font-size: 18px;
   }
 
-  .nav-ul a:focus {
+  .nav-ul-desktop a:focus {
     background-color: #172b4d;
     color: #fff;
   }
 
-  .top-navigation img {
+  .btn-tertiary img {
     position: absolute;
     top: 0;
     left: 0;
