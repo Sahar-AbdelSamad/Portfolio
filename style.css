@@ -6,8 +6,17 @@
   padding: 0;
 }
 
+.menu-item-new {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
 .toolbar {
-  position: sticky;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -20,6 +29,10 @@
 }
 
 .top-navigation {
+  display: none;
+}
+
+.nav-ul-desktop {
   display: none;
 }
 
@@ -443,6 +456,14 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     position: fixed;
+  }
+
+  .nav-ul-mobile {
+    display: none;
+  }
+
+  .top-navigation {
+    display: block;
   }
 
   .nav-ul-desktop {
