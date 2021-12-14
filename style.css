@@ -8,25 +8,52 @@
 
 .menu-item-new {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  inset: 0 0 0 0;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 0 24px;
+}
+
+.nav-ul-mobile a {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #3A4A42;
+  height: 24px;
+  line-height: 44px;
+  padding: 0 4px;
+  text-decoration: none;
+  transition: font-size 0.1s, color 0.1s, background-color 0.1s;
+}
+
+.nav-ul-mobile a:hover {
+  font-size: 40px;
+}
+
+.nav-ul-mobile a:focus {
+  background-color: #172b4d;
+  color: #fff;
 }
 
 .toolbar {
-  position: fixed;
+  position: sticky;
   left: 0;
   right: 0;
   top: 0;
-  display: flex;
-  justify-content: space-between;
   z-index: 1000;
 }
 
+.toolbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .top-navigation {
-  display: flex;
+  display: none;
 }
 
 .logo {
@@ -37,6 +64,7 @@
   line-height: 28px;
   color: #28352f;
   padding: 10px 0 10px 12px;
+  float: left;
 }
 
 .btn {
@@ -45,11 +73,11 @@
 }
 
 .btn-tertiary {
+  float: right;
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
   padding-right: 24px;
-  z-index: 9999;
 }
 
 .headline {
@@ -431,7 +459,6 @@ textarea:focus {
 @media screen and (min-width: 992px) {
   body {
     background-size: 100% auto;
-    margin-top: 72px;
   }
 
   .headline {
@@ -449,17 +476,14 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: #fff;
-    z-index: 1000;
-  }
-  
-  
-  .nav-ul-mobile {
-    display: none;
   }
 
   .top-navigation {
     display: block;
+  }
+
+  .nav-ul-mobile {
+    display: none;
   }
 
   .nav-ul-desktop {
@@ -641,24 +665,4 @@ textarea:focus {
   .indicator-footer {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
-  .nav-ul-desktop{
-    display: flex;
-    position: fixed;
-    inset: 0 0 0 0;
-    background-color: #fff;
-    transform: translateX(0%);
-    } 
-}
-
-@media (max-width:480px) {
-  .nav-ul-desktop{
-    display: flex;
-    position: fixed;
-    inset: 0 0 0 0;
-    background-color: #fff;
-    transform: translateX(0%);
-    }
 }
