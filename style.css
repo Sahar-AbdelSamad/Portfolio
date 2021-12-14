@@ -6,11 +6,45 @@
   padding: 0;
 }
 
+.menu-item-new {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  inset: 0 0 0 0;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 0 24px;
+}
+
+.nav-ul-mobile a {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #3a4a42;
+  height: 24px;
+  line-height: 44px;
+  padding: 0 4px;
+  text-decoration: none;
+  transition: font-size 0.1s, color 0.1s, background-color 0.1s;
+}
+
+.nav-ul-mobile a:hover {
+  font-size: 40px;
+}
+
+.nav-ul-mobile a:focus {
+  background-color: #172b4d;
+  color: #fff;
+}
+
 .toolbar {
   position: sticky;
   left: 0;
   right: 0;
   top: 0;
+  background: white;
+  z-index: 1000;
 }
 
 .toolbar::after {
@@ -19,7 +53,7 @@
   display: table;
 }
 
-.nav-ul {
+.top-navigation {
   display: none;
 }
 
@@ -34,16 +68,13 @@
   float: left;
 }
 
-.top-navigation {
-  float: right;
-}
-
 .btn {
   padding: 8px;
   background: #fff;
 }
 
 .btn-tertiary {
+  float: right;
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
@@ -126,6 +157,10 @@ li {
 }
 
 /* Works Section */
+
+.works {
+  padding-top: 40px;
+}
 
 .indicator {
   width: 48px;
@@ -216,14 +251,11 @@ li {
 /* About Myself section */
 
 .about-myself {
-  margin: 20px auto 0;
+  margin: 60px auto 0;
   background: url("Images/Mask-Group.svg") 100% 0% no-repeat, url("Images/about-me-illustration.svg") 0% 25% no-repeat;
   display: flex;
   flex-direction: column;
-}
-
-.primary-text-about-myself {
-  margin-top: 48px;
+  padding-top: 50px;
 }
 
 .button-about-me {
@@ -312,6 +344,7 @@ li {
 
 .form {
   background: url(Images/Frame.svg) 100% 100% no-repeat;
+  padding-top: 35px;
 }
 
 .form h2 {
@@ -321,7 +354,7 @@ li {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin: 60px 24px 34px;
+  margin: 0 24px 34px;
 }
 
 form {
@@ -441,21 +474,30 @@ textarea:focus {
   }
 
   .toolbar {
-    height: 72px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
+    background-color: white;
   }
 
-  .nav-ul {
+  .top-navigation {
+    display: block;
+  }
+
+  .nav-ul-mobile {
+    display: none;
+  }
+
+  .nav-ul-desktop {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
   }
 
-  .nav-ul a {
+  .nav-ul-desktop a {
     height: 40px;
     font-family: Inter, sans-serif;
     font-weight: 600;
@@ -467,16 +509,16 @@ textarea:focus {
     transition: font-size 0.1s, color 0.1s, background-color 0.1s;
   }
 
-  .nav-ul a:hover {
+  .nav-ul-desktop a:hover {
     font-size: 18px;
   }
 
-  .nav-ul a:focus {
+  .nav-ul-desktop a:focus {
     background-color: #172b4d;
     color: #fff;
   }
 
-  .top-navigation img {
+  .btn-tertiary img {
     position: absolute;
     top: 0;
     left: 0;
@@ -519,6 +561,10 @@ textarea:focus {
   }
 
   /* Works Section */
+
+  .works {
+    padding-top: 50px;
+  }
 
   .indicator {
     display: none;
@@ -573,6 +619,7 @@ textarea:focus {
     grid-template-columns: 9.65% 32% 1.7% 47% 9.65%;
     grid-template-rows: 1fr;
     margin: auto;
+    padding-top: 40px;
   }
 
   .form h2 {

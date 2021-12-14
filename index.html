@@ -17,21 +17,30 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Sahar-Abdel Samad's Portfolio</title>
 </head>
 
 <body>
     <header class="toolbar">
-        <ul class="nav-ul">
-            <li><a href="#works">Portfolio</a></li>
-            <li><a href="#about-myself">About</a></li>
-            <li><a href="#form">Contact</a></li>
-        </ul>
         <a href="#" class="logo">Welcome</a>
+        <button type="button" class="btn btn-tertiary">
+            <img src="Images/Normal-Button/Tertiary/Icons/Union.svg" alt="union icon">
+        </button>
         <nav class="top-navigation">
-            <button type="button" class="btn btn-tertiary">
-                <img src="Images/Normal-Button/Tertiary/Icons/Union.svg" alt="union icon">
-            </button>
+            <ul class="nav-ul-mobile">
+                <li><button type="button" class="btn btn-tertiary">
+                    <img src="Images/close.svg" alt="close icon">
+                </button></li>
+                <li class="menu-item"><a href="#works">Portfolio</a></li>
+                <li class="menu-item"><a href="#about-myself">About</a></li>
+                <li class="menu-item"><a href="#form">Contact</a></li>
+            </ul>
+            <ul class="nav-ul-desktop">
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#about-myself">About</a></li>
+                <li><a href="#form">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="headline">
