@@ -43,6 +43,7 @@
   left: 0;
   right: 0;
   top: 0;
+  background: white;
   z-index: 1000;
 }
 
@@ -157,6 +158,10 @@ li {
 
 /* Works Section */
 
+.works {
+  padding-top: 40px;
+}
+
 .indicator {
   width: 48px;
   height: 4px;
@@ -246,14 +251,11 @@ li {
 /* About Myself section */
 
 .about-myself {
-  margin: 20px auto 0;
+  margin: 60px auto 0;
   background: url("Images/Mask-Group.svg") 100% 0% no-repeat, url("Images/about-me-illustration.svg") 0% 25% no-repeat;
   display: flex;
   flex-direction: column;
-}
-
-.primary-text-about-myself {
-  margin-top: 48px;
+  padding-top: 50px;
 }
 
 .button-about-me {
@@ -342,6 +344,7 @@ li {
 
 .form {
   background: url(Images/Frame.svg) 100% 100% no-repeat;
+  padding-top: 35px;
 }
 
 .form h2 {
@@ -351,7 +354,7 @@ li {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin: 60px 24px 34px;
+  margin: 0px 24px 34px;
 }
 
 form {
@@ -471,11 +474,12 @@ textarea:focus {
   }
 
   .toolbar {
-    height: 72px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
+    background-color: white;
   }
 
   .top-navigation {
@@ -558,6 +562,10 @@ textarea:focus {
 
   /* Works Section */
 
+  .works {
+    padding-top: 50px;
+  }
+
   .indicator {
     display: none;
   }
@@ -611,6 +619,7 @@ textarea:focus {
     grid-template-columns: 9.65% 32% 1.7% 47% 9.65%;
     grid-template-rows: 1fr;
     margin: auto;
+    padding-top: 40px;
   }
 
   .form h2 {
