@@ -679,18 +679,27 @@ textarea:focus {
 /* modal windows */
 
 .popup {
-  display: none;
+  background-color: saddlebrown;
+  position: fixed;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  inset: 0 0 0 0;
+  z-index: 9999;
 }
 
 .popup-section {
-  background-color: saddlebrown;
-  position: absolute;
-  inset: 0 0 0 0;
-  z-index: 9999;
+  display: none;
 }
 
 .new-title {
   font-family: Inter, sans-serif;
   text-align: center;
   color: #172b4d;
+}
+
+.new-project-img{
+  display: block;
+  width: 100px;
+  aspect-ratio: 1;
 }

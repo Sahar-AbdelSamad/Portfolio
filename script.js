@@ -37,8 +37,8 @@ for ( let i=0; i < popupTitle.length;i++){
 }
 
 const popupSection = document.createElement('section');
-popupSection.className = ('popup-section');
 document.body.appendChild(popupSection);
+popupSection.className = ('popup-section');
 
 const newCloseImg = document.createElement('img');
 newCloseImg.className = ('new-close-img');
@@ -94,8 +94,8 @@ newDescription.textContent = popupObj.Project0.description;
 popupSection.appendChild(newDescription);
 
 function openPopup (item) {
-  popupSection.classList.toggle = ('popup');
-  popupSection.classList.toggle = ('popup-section');
+    popupSection.classList.toggle('popup');
+    popupSection.classList.toggle('popup-section');
 for (let i=0; i< popupTitle.length ; i++){
   if (item.target===popupBtn[i]){
     newTitle.textContent = popupObj[`Project${i}`].title;
