@@ -675,3 +675,22 @@ textarea:focus {
     display: none;
   }
 }
+
+/* modal windows */
+
+.popup {
+  display: none;
+}
+
+.popup-section {
+  background-color: saddlebrown;
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 9999;
+}
+
+.new-title {
+  font-family: Inter, sans-serif;
+  text-align: center;
+  color: #172b4d;
+}
