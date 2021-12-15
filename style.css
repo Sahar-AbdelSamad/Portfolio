@@ -4,17 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.menu-item-new {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  inset: 0 0 0 0;
-  background-color: #fff;
-  z-index: 9999;
-  padding: 0 24px;
+  scroll-behavior: smooth;
 }
 
 .nav-ul-mobile a {
@@ -336,10 +326,6 @@ li {
   background: #008552;
 }
 
-.button:focus {
-  transform: scale(1.1);
-}
-
 /* Contact form section */
 
 .form {
@@ -434,6 +420,89 @@ textarea:focus {
   background: #0d151e;
   border-radius: 10px;
   margin: 134px auto 8px;
+}
+
+/* Mobile menu */
+
+.menu-item-new {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  inset: 0 0 0 0;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 0 24px;
+}
+
+/* Popup windows */
+
+.popup {
+  position: fixed;
+  inset: 0 0 0 0;
+  overflow: scroll;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.popup-section {
+  display: none;
+}
+
+.new-close-img {
+  align-self: flex-end;
+}
+
+.new-project-img {
+  height: 40vh;
+}
+
+.new-title {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  order: 0;
+}
+
+.new-btns {
+  display: flex;
+  gap: 12px;
+  order: 4;
+}
+
+.new-btns a:first-child {
+  margin: 0;
+  background: #008552 url("Images/see-live-icon.svg") 90% 50% no-repeat;
+  font-size: 15px;
+  width: 115px;
+}
+
+.new-btns a:last-child {
+  margin: 0;
+  background: #008552 url("Images/see-source-icon.svg") 90% 50% no-repeat;
+  width: 141px;
+  background-size: 24px 24px;
+  font-size: 15px;
+}
+
+.new-techno {
+  justify-content: start;
+  order: 2;
+}
+
+.new-description {
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  order: 3;
 }
 
 /* Add transition and animation */
@@ -673,5 +742,64 @@ textarea:focus {
 
   .indicator-footer {
     display: none;
+  }
+
+  /* Popup Windows */
+
+  .popup {
+    position: fixed;
+    inset: 0 0 0 0;
+    overflow: scroll;
+    background-color: #fff;
+    z-index: 9999;
+    padding: 12px 15% 0 15%;
+    display: block;
+  }
+
+  .popup::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .new-close-img {
+    position: absolute;
+    right: 15%;
+  }
+
+  .new-project-img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+  }
+
+  .new-title {
+    color: #172b4d;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    float: left;
+    display: block;
+  }
+
+  .new-btns {
+    display: flex;
+    gap: 12px;
+    float: right;
+  }
+
+  .new-techno {
+    justify-content: start;
+    clear: both;
+    padding: 20px 0 36px;
+  }
+
+  .new-description {
+    font-family: Inter, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
   }
 }
