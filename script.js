@@ -90,7 +90,7 @@ newDescription.className = ('new-description');
 newDescription.textContent = popupObj.Project0.description;
 popupSection.appendChild(newDescription);
 
-function openPopup(item) {
+const openPopup = (item) => {
   popupSection.classList.toggle('popup');
   popupSection.classList.toggle('popup-section');
   for (let i = 0; i < popupTitle.length; i += 1) {
@@ -98,7 +98,7 @@ function openPopup(item) {
       newTitle.textContent = popupObj[`Project${i}`].title;
     }
   }
-}
+};
 
 popupBtn.forEach((item) => { item.addEventListener('click', openPopup); });
 
