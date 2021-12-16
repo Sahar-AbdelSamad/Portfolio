@@ -509,7 +509,7 @@ textarea:focus {
 
 .wrong-email {
   font-size: large;
-  color: red;
+  color: #36b37e;
   display: block;
   margin-left: 6.5%;
   margin-bottom: 20px;
