@@ -107,8 +107,6 @@ closeBtn.forEach((item) => { item.addEventListener('click', openPopup); });
 
 // Validate contact form
 
-/* Validate contact form */
-
 const formEmail = document.querySelector('#email');
 const formBtn = document.querySelector('.button-form');
 formBtn.addEventListener('click', ((event) => {

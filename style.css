@@ -505,6 +505,20 @@ textarea:focus {
   order: 3;
 }
 
+/* Validate contact form */
+
+.wrong-email {
+  font-size: large;
+  color: red;
+  display: block;
+  margin-left: 6.5%;
+  margin-bottom: 20px;
+  }
+  
+.error {
+display: none;
+}
+
 /* Add transition and animation */
 
 @keyframes slidein-right {
@@ -802,16 +816,10 @@ textarea:focus {
     line-height: 24px;
     color: #344563;
   }
-}
 
-/* Validate contact form */
+  /* Validate contact form */
 
 .wrong-email {
-  font-size: large;
-  color: red;
-  display: block;
+  margin-left: 0%;
   }
-  
-  .error {
-  display: none;
-  } 
+} 
