@@ -109,30 +109,28 @@ closeBtn.forEach((item) => { item.addEventListener('click', openPopup); });
 
 const formEmail = document.querySelector('#email');
 const formBtn = document.querySelector('.button-form');
-formBtn.addEventListener('click', ((event) => {
-  
-  const pattern = /[A-Z]/;
-    if (pattern.test(formEmail.value)) {
-      failed(event);
-    } else {
-        success();
-      }
-}));
-
-function failed(event) {
-  event.preventDefault();
-  error.classList.add('wrong-email');
-  error.classList.remove('error');
-}
-
-function success() {
-  error.classList.remove('wrong-email');
-  error.classList.add('error');
-}
-
-const form = document.querySelector('form');
 const formMessage = document.querySelector('.error-message');
 const error = document.createElement('small');
 error.className = ('error');
 error.innerText = ('The content of the email field has to be in lower case');
-formMessage.appendChild(error); 
+formMessage.appendChild(error);
+
+const failed = (event) => {
+  event.preventDefault();
+  error.classList.add('wrong-email');
+  error.classList.remove('error');
+};
+
+const success = () => {
+  error.classList.remove('wrong-email');
+  error.classList.add('error');
+};
+
+formBtn.addEventListener('click', ((event) => {
+  const pattern = /[A-Z]/;
+  if (pattern.test(formEmail.value)) {
+    failed(event);
+  } else {
+    success();
+  }
+}));
