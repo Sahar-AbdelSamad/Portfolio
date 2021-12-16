@@ -104,3 +104,28 @@ popupBtn.forEach((item) => { item.addEventListener('click', openPopup); });
 
 const closeBtn = document.querySelectorAll('.new-close-img');
 closeBtn.forEach((item) => { item.addEventListener('click', openPopup); });
+
+// Validate contact form
+
+const formEmail = document.querySelector('#email');
+const formBtn = document.querySelector('.button-form');
+formBtn.addEventListener('click', ((event) => {
+  
+  const pattern = /[A-Z]/;
+    if (pattern.test(formEmail.value)) {
+      failed(event);
+    } else {
+        success();
+      }
+}));
+
+function failed(event) {
+  event.preventDefault();
+  error.classList.add('wrong-email');
+  error.classList.remove('error');
+}
+
+function success() {
+  error.classList.remove('wrong-email');
+  error.classList.add('error');
+}

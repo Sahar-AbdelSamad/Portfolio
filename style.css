@@ -505,6 +505,19 @@ textarea:focus {
   order: 3;
 }
 
+/* Validate contact form */
+
+.wrong-email {
+  font-size: large;
+  color: red;
+  display: block;
+}
+
+.error {
+  display: none;
+}
+
+
 /* Add transition and animation */
 
 @keyframes slidein-right {
