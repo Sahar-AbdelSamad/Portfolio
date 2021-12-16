@@ -513,10 +513,10 @@ textarea:focus {
   display: block;
   margin-left: 6.5%;
   margin-bottom: 20px;
-  }
-  
+}
+
 .error {
-display: none;
+  display: none;
 }
 
 /* Add transition and animation */
@@ -819,7 +819,7 @@ display: none;
 
   /* Validate contact form */
 
-.wrong-email {
-  margin-left: 0%;
+  .wrong-email {
+    margin-left: 0%;
   }
-} 
+}
