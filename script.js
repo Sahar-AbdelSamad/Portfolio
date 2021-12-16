@@ -107,6 +107,8 @@ closeBtn.forEach((item) => { item.addEventListener('click', openPopup); });
 
 // Validate contact form
 
+/* Validate contact form */
+
 const formEmail = document.querySelector('#email');
 const formBtn = document.querySelector('.button-form');
 formBtn.addEventListener('click', ((event) => {
@@ -129,3 +131,10 @@ function success() {
   error.classList.remove('wrong-email');
   error.classList.add('error');
 }
+
+const form = document.querySelector('form');
+const formMessage = document.querySelector('.error-message');
+const error = document.createElement('small');
+error.className = ('error');
+error.innerText = ('The content of the email field has to be in lower case');
+formMessage.appendChild(error); 
