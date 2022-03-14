@@ -23,7 +23,7 @@ You can see [my page live here](https://sahar-abdelsamad.github.io/Portfolio-set
 
 - GitHub: [@sahar-abdelsamad](https://github.com/Sahar-AbdelSamad)
 - Twitter: [@abdelsamadsahar](https://twitter.com/AbdelSamadSahar)
-- LinkedIn: [abdel-samad-sahar](https://www.linkedin.com/in/abdel-samad-sahar-353977223/)
+- LinkedIn: [sahar-abdel-samad](https://www.linkedin.com/in/sahar-abdel-samad/)
 
 ## 🤝 Contributing
 
