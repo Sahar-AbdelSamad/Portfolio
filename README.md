@@ -7,9 +7,19 @@
 
 This website is a setup and mobile version skeleton of my portfolio.
 
+## Setup
+
+### Clone this repository
+
+```bash
+$ git clone git@github.com:Sahar-AbdelSamad/Portfolio.git
+$ cd Portfolio
+```
+### Run the live server or open index.html with your browser
+
 ## Live Demo
 
-You can see [my page live here](https://sahar-abdelsamad.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+You can see [my page live here](https://sahar-abdelsamad.github.io/Portfolio/)
 
 ## Built With
 
