@@ -17,215 +17,214 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
     <title>Sahar-Abdel Samad's Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav class="bg-white sm:py-0 py-3 fixed w-full justify-center flex gap-[65vw] items-center">
-            <a class="sm:hidden font-semibold ml-6 text-xl text-left text-[#172B4D]" href="#">Welcome</a>
-            
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="sm:hidden w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#172B4D"
-                >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 8h16M4 13h16M4 18h16"
-                />
-                </svg>
-            <ul class="hidden sm:flex sm:gap-2 sm:font-semibold text-[15px] text-[#172B4D]">
-                <li class="sm:py-2.5 sm:px-3 "><a href="#works">Portfolio</a></li>
-                <li class="sm:py-2.5 sm:px-3 "><a href="#about-myself">About</a></li>
-                <li class="sm:py-2.5 sm:px-3 "><a href="#form">Contact</a></li>
+    <header class="toolbar">
+        <a href="#" class="logo">Welcome</a>
+        <button type="button" class="btn btn-tertiary">
+            <img src="Images/Normal-Button/Tertiary/Icons/Union.svg" alt="union icon">
+        </button>
+        <nav class="top-navigation">
+            <ul class="nav-ul-mobile">
+                <li><button type="button" class="btn btn-tertiary">
+                    <img src="Images/close.svg" alt="close icon">
+                </button></li>
+                <li class="menu-item"><a href="#works">Portfolio</a></li>
+                <li class="menu-item"><a href="#about-myself">About</a></li>
+                <li class="menu-item"><a href="#form">Contact</a></li>
+            </ul>
+            <ul class="nav-ul-desktop">
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#about-myself">About</a></li>
+                <li><a href="#form">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="headline pt-28">
-        <h1 class="font-bold text-4xl text-center text-[#172B4D]">Hey there. I&#39;m Sahar</h1>
-        <h2 class="font-bold text-4xl text-center text-[#36B37E]">I&#39;m a software developer</h2>
-        <p class="font-normal sm:my-6 sm:w-7/12 sm:mx-auto my-[58px] px-6 text-xl text-center text-[#172B4D]">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+    <section class="headline">
+        <h1 class="primary-text">Hey there. I’m Sahar</h1>
+        <h2>I’m a software developer</h2>
+        <p>I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
         </p>
-        <ul class="flex gap-5 justify-center mb-[62px] sm:mb-[74px]">
+        <ul class="lets-connect">
             <li>
-                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/sahar-abdel-samad/" target="_blank"><img src="Images/Linkedin-icon.svg" alt="linkdin icon"></a>
+                <a rel="noopener noreferrer" href="https://twitter.com/home?lang=en" target="_blank"><img src="Images/twitter.svg" alt="twitter icon"></a>
+            </li>
+            <li>
+                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/abdel-samad-sahar-353977223/" target="_blank"><img src="Images/Linkedin-icon.svg" alt="linkdin icon"></a>
+            </li>
+            <li>
+                <a rel="noopener noreferrer" href="hhttps://github.com/Sahar-AbdelSamad" target="_blank"><img src="Images/medium.svg" alt="medium icon"></a>
             </li>
             <li>
                 <a rel="noopener noreferrer" href="https://github.com/Sahar-AbdelSamad" target="_blank"><img src="Images/github.svg" alt="github icon"></a>
             </li>
             <li>
-                <a rel="noopener noreferrer" href="https://angel.co/u/sahar-abdel-samad" target="_blank"><img src="Images/angellist.svg" alt="angellist icon"></a>
+                <a rel="noopener noreferrer" href="https://angel.co/" target="_blank"><img src="Images/angellist.svg" alt="angellist icon"></a>
             </li>
         </ul>
-        <a href="#works" class="flex justify-center "><img src="Images/Normal-Button/Secondary/Icons/Chevron-Down.svg"
-                alt="down icon"></a>
+        <button type="button" class="btn btn-secondary"><img src="Images/Normal-Button/Secondary/Icons/Chevron-Down.svg"
+                alt="down icon"></button>
     </section>
-
     <!-- works section -->
-    <section id="works">
-        <h2 class="font-bold text-4xl pt-10 text-center text-[#172B4D]">My Recent Works</h2>
-        <div class="w-12 h-1 bg-[#36B37E] mx-auto mt-6 mb-16"></div>
-        <div>
-            <img>
-                <div>
+    <section class="works" id="works">
+        <h2 class="primary-text">My Recent Works</h2>
+        <p class="indicator"></p>
+        <div class="grid-container">
+            <div class="item">
+                <div class="flex-container">
                     <h4>Title 1</h4>
-                    <p>A Platform game made with JavaScript using the Phaser framework</p>
-                    <ul>
-                        <li>Ruby on rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <a>See Project</a>
+                    <div class="tags">
+                        <h6>Ruby on rails</h6>
+                        <h6>CSS</h6>
+                        <h6>JavaScript</h6>
+                        <h6>HTML</h6>
+                    </div>
+                    <a  class="button popupBtn">See Project</a>
                 </div>
             </div>
-            <img>
-                <div>
+            <div class="item">
+                <div class="flex-container">
                     <h4>Title 2</h4>
-                    <p>A Platform game made with JavaScript using the Phaser framework</p>
-                    <ul>
-                        <li>Ruby on rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <a>See Project</a>
+                    <div class="tags">
+                        <h6>Ruby on rails</h6>
+                        <h6>CSS</h6>
+                        <h6>JavaScript</h6>
+                        <h6>HTML</h6>
+                    </div>
+                    <a  class="button popupBtn">See Project</a>
                 </div>
             </div>
-            <img>
-                <div>
+            <div class="item">
+                <div class="flex-container">
                     <h4>Multi-Post Stories Gain+Glory</h4>
-                    <p>A Platform game made with JavaScript using the Phaser framework</p>
-                    <ul>
-                        <li>Ruby on rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <a>See Project</a>
+                    <div class="tags">
+                        <h6>Ruby on rails</h6>
+                        <h6>CSS</h6>
+                        <h6>JavaScript</h6>
+                        <h6>HTML</h6>
+                    </div>
+                    <a  class="button popupBtn">See Project</a>
                 </div>
             </div>
-            <img>
-                <div>
+            <div class="item">
+                <div class="flex-container">
                     <h4>Multi-Post Stories Gain+Glory</h4>
-                    <p>A Platform game made with JavaScript using the Phaser framework</p>
-                    <ul>
-                        <li>Ruby on rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <a>See Project</a>
+                    <div class="tags">
+                        <h6>Ruby on rails</h6>
+                        <h6>CSS</h6>
+                        <h6>JavaScript</h6>
+                        <h6>HTML</h6>
+                    </div>
+                    <a  class="button popupBtn">See Project</a>
                 </div>
             </div>
-            <img>
-                <div>
+            <div class="item">
+                <div class="flex-container">
                     <h4>Multi-Post Stories Gain+Glory</h4>
-                    <p>A Platform game made with JavaScript using the Phaser framework</p>
-                    <ul>
-                        <li>Ruby on rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <a>See Project</a>
+                    <div class="tags">
+                        <h6>Ruby on rails</h6>
+                        <h6>CSS</h6>
+                        <h6>JavaScript</h6>
+                        <h6>HTML</h6>
+                    </div>
+                    <a  class="button popupBtn">See Project</a>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="item">
+                <div class="flex-container">
                     <h4>Multi-Post Stories Gain+Glory</h4>
-                    <p>A Platform game made with JavaScript using the Phaser framework</p>
-                    <ul>
-                        <li>Ruby on rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <a>See Project</a>
+                    <div class="tags">
+                        <h6>Ruby on rails</h6>
+                        <h6>CSS</h6>
+                        <h6>JavaScript</h6>
+                        <h6>HTML</h6>
+                    </div>
+                    <a  class="button popupBtn">See Project</a>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- about myself section -->
-    <section id="about-myself" class="about-myself">
-        <h2 class="font-bold text-4xl pt-10 text-center text-[#172B4D] mb-6">About me</h2>
-        <p class="font-normal sm:w-3/5 w-4/5 mx-auto text-xl text-center text-[#172B4D] mb-6"> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-        <a href="#" class="hover:bg-[#008552] text-sm text-white font-medium bg-[#36B37E] p-3 rounded mx-auto flex justify-center w-40">Get My Resume</a>
-        <ul>
-            <li>
+    <section class="about-myself" id="about-myself">
+        <h2 class="primary-text primary-text-about-myself">About me</h2>
+        <p class="supporting-text-about-me"> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <a href="#" class="button button-about-me">Get My Resume</a>
+        <ul class="categories">
+            <li class="about-myself-items">
+                <img src="Images/icon-languages.svg" alt="icon for languages">
                 <h4>Languages</h4>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>Ruby</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+                <div class="tags-about-me">
+                    <h6>JavaScript</h6>
+                    <h6>Ruby</h6>
+                    <h6>HTML</h6>
+                    <h6>CSS</h6>
+                </div>
             </li>
-            <li>
+            <li class="about-myself-items">
+                <img src="Images/icon-frameworks.svg" alt="icon for frameworks">
                 <h4>Frameworks</h4>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Ruby on rails</li>
-                    <li>RSpec</li>
-                    <li>Capybara</li>
-                    <li>Selenium</li>
-                </ul>
+                <div class="tags-about-me">
+                    <h6>Bootstrap</h6>
+                    <h6>Ruby on rails</h6>
+                    <h6>RSpec</h6>
+                    <h6>Capybara</h6>
+                    <h6>Selenium</h6>
+                </div>
             </li>
-            <li>
+            <li class="about-myself-items">
+                <img src="Images/icon-skills.svg" alt="icon for skills">
                 <h4>Skills</h4>
-                <ul>
-                    <li>Codekit</li>
-                    <li>GitHub</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                </ul>
+                <div class="tags-about-me">
+                    <h6>Codekit</h6>
+                    <h6>GitHub</h6>
+                    <h6>Codepen</h6>
+                    <h6>Gitlab</h6>
+                    <h6>Terminal</h6>
+                </div>
             </li>
         </ul>
     </section>
-
     <!-- Form section -->
-    <section id="form">
-        <h2 class="font-bold pt-10 text-4xl text-center text-[#172B4D] my-14 mx-6">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    <section class="form" id="form">
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form action="https://formspree.io/f/mbjwrpbr" method="POST">
             <label for="name">
             <input type="text" id="name" placeholder="Full name" maxlength="30" name="fullname" required>
-            </label>
+        </label>
             <label for="email">    
-            <input type="email" id="email" placeholder="Email address" name="email" required>
-            </label>
+        <input type="email" id="email" placeholder="Email address" name="email" required>
+        </label>
             <label for="message">   
-            <textarea name="msg" id="message" maxlength="500" placeholder="Enter text here" required></textarea>
+        <textarea name="msg" id="message" maxlength="500" placeholder="Enter text here" required></textarea>
             </label>
-            <button type="submit" class="sm:mb-56 hover:bg-[#008552] text-sm text-white font-medium bg-[#36B37E] p-3 rounded mx-auto flex justify-center w-32 mt-6 mb-11">Get in touch</button>
+            <button class="button button-form" type="submit">Get in touch</button>
         </form>
     </section>
-
     <!-- Footer -->
     <footer>
-        <hr class="hidden sm:block">
-        <ul class="flex gap-5 justify-center mb-5 sm:py-6 sm:mb-0">
+        <p class="hr"></p>
+        <ul class="lets-connect lets-connect-footer">
             <li>
-                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/sahar-abdel-samad/" target="_blank"><img src="Images/Linkedin-icon.svg" alt="linkdin icon"></a>
+                <a rel="noopener noreferrer" href="https://twitter.com/home?lang=en" target="_blank"><img src="Images/twitter.svg" alt="twitter icon"></a>
+            </li>
+            <li>
+                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/abdel-samad-sahar-353977223/" target="_blank"><img src="Images/Linkedin-icon.svg" alt="linkdin icon"></a>
+            </li>
+            <li>
+                <a rel="noopener noreferrer" href="hhttps://github.com/Sahar-AbdelSamad" target="_blank"><img src="Images/medium.svg" alt="medium icon"></a>
             </li>
             <li>
                 <a rel="noopener noreferrer" href="https://github.com/Sahar-AbdelSamad" target="_blank"><img src="Images/github.svg" alt="github icon"></a>
             </li>
             <li>
-                <a rel="noopener noreferrer" href="https://angel.co/u/sahar-abdel-samad" target="_blank"><img src="Images/angellist.svg" alt="angellist icon"></a>
+                <a rel="noopener noreferrer" href="https://angel.co/" target="_blank"><img src="Images/angellist.svg" alt="angellist icon"></a>
             </li>
         </ul>
-        <div class="sm:hidden flex justify-center mb-32 tex-xl font-normal text-[#42526E]">sahar.abdelsamad@gmail.com</div>
-        <div class="sm:hidden w-32 h-1 bg-[#0D151E] mx-auto rounded-xl mb-2"></div>
+        <p class="my-email">sahar.abdelsamad@gmail.com</p>
+        <p class="indicator-footer"></p>
     </footer>
 </body>
 
