@@ -18,29 +18,74 @@ menuButton.forEach((item) => {
 // modal windows
 
 const popupBtn = document.querySelectorAll('.popupBtn');
+const workSection = document.querySelector('.grid-container');
 
-const popupTitle = [];
-document.querySelectorAll('div.flex-container > h4').forEach((item) => {
-  popupTitle.push(item.textContent);
-});
+const projects = [
+  {
+    name: "Rent Me",
+    description: "Rent me is a full-stack project, the front-end is a responsive app that lists houses. A user can see the details of a specific house, and reserve it by clicking on the RESERVE button. The user can also access the RESERVATIONS page from the navigation panel, and add or delete a house. The back-end contains documentation for the API made with Postman. ",
+    image: "./Images/project-screenshoot.png",
+    technologies: ["Ruby on Rails", "PostgreSQL", "React", "Redux"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/house-booking-front-end",
+    livelink: "https://rent-me-capstone-project.netlify.app/",
+  },
+  {
+    name: "Budget App",
+    description: "The Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. ",
+    image: "./Images/project-screenshoot.png",
+    technologies: ["Ruby on Rails", "Ruby", "PostgreSQL", "Rspec"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/budget-app",
+    livelink: "https://my-budget-sahar.herokuapp.com/",
+  },
+  {
+    name: "Recipe App",
+    description: "The Recipe allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.  ",
+    image: "./Images/project-screenshoot.png",
+    technologies: ["Ruby on Rails", "Ruby", "PostgreSQL", "Rspec"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
+    livelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
+  },
+  {
+    name: "Catalog of Stuff",
+    description: "This is a Ruby Group Capstone Project meant to wrap the concepts of Ruby language and SQL Databases, creating an OOP project based on a UML diagram. It is a console app that will help us keep a record of different types of things we won: books, music albums, and games.",
+    image: "./Images/project-screenshoot.png",
+    technologies: ["Ruby", "PostgreSQL", 'Rspec', 'OOP'],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/catalog-of-stuff",
+    livelink: "https://github.com/Sahar-AbdelSamad/catalog-of-stuff",
+  },
+  {
+    name: "Company Profile",
+    description: "This web application retrieves real live data from the Financial modeling prep API. It provides financial information about companies listed on Nasdaq 100 and Dow Jones Market indexes. All these companies are listed on the Home page. Users can filter these companies by searching for a specific company or by choosing one from the dropdown. ",
+    image: "./Images/project-screenshoot.png",
+    technologies: ["React", "Redux", "Webpack", "CSS3"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/company-profile",
+    livelink: "https://sahar-abdelsamad.github.io/company-profile/",
+  },
+  {
+    name: "Delicious Recipes",
+    description: "Delicious Recipes is a Webpack project, it retrieves information from two different APIs: Meals DB and Involvement API. The homepage lists some recipes that we can LIKE. The comment button opens a popup window, shows us more information about the recipe, and allows us to leave a comment.",
+    image: "./Images/project-screenshoot.png",
+    technologies: ["JavaScript", "CSS", "WebPack", "jest"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/delicious-recipes",
+    livelink: "https://sahar-abdelsamad.github.io/delicious-recipes/",
+  },
+];
 
-const popupTechno = ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'];
-
-const popupDescrip = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
-
-const popupLive = 'https://sahar-abdelsamad.github.io/Portfolio-setup-and-mobile-version-skeleton/';
-
-const popupSource = 'https://github.com/Sahar-AbdelSamad/Portfolio-setup-and-mobile-version-skeleton';
-
-const popupObj = {};
-for (let i = 0; i < popupTitle.length; i += 1) {
-  popupObj[`Project${i}`] = {};
-  popupObj[`Project${i}`].title = popupTitle[i];
-  popupObj[`Project${i}`].technologies = popupTechno;
-  popupObj[`Project${i}`].description = popupDescrip;
-  popupObj[`Project${i}`].liveLink = popupLive;
-  popupObj[`Project${i}`].sourceLink = popupSource;
-}
+for (let i = 0; i < projects.length; i += 1) {
+  workSection.innerHTML+=
+  `<div class="item">
+  <div class="flex-container">
+    <h4>${projects[i].name}</h4>
+    <div class="tags">
+        <h6>${projects[i].technologies[0]}</h6>
+        <h6>${projects[i].technologies[1]}</h6>
+        <h6>${projects[i].technologies[2]}</h6>
+        <h6>${projects[i].technologies[3]}</h6>
+    </div>
+    <a class="button popupBtn">See Project</a>
+  </div>
+  </div>`;
+};
 
 const popupSection = document.createElement('section');
 popupSection.className = ('popup-section');
@@ -66,12 +111,10 @@ const newBtns = document.createElement('div');
 newBtns.className = ('new-btns');
 popupSection.appendChild(newBtns);
 const firstBtn = document.createElement('a');
-firstBtn.href = popupObj.Project0.liveLink;
 firstBtn.className = ('button');
 firstBtn.textContent = ('See Live');
 newBtns.appendChild(firstBtn);
 const secondBtn = document.createElement('a');
-secondBtn.href = popupObj.Project0.sourceLink;
 secondBtn.className = ('button');
 secondBtn.textContent = ('See Source');
 newBtns.appendChild(secondBtn);
@@ -79,23 +122,25 @@ newBtns.appendChild(secondBtn);
 const newTechno = document.createElement('div');
 newTechno.classList.add('new-techno', 'tags');
 popupSection.appendChild(newTechno);
-for (let i = 0; i < popupTechno.length; i += 1) {
-  const newTechnoItem = document.createElement('h6');
-  newTechnoItem.textContent = popupObj.Project0.technologies[i];
-  newTechno.appendChild(newTechnoItem);
-}
 
 const newDescription = document.createElement('p');
 newDescription.className = ('new-description');
-newDescription.textContent = popupObj.Project0.description;
 popupSection.appendChild(newDescription);
 
 const openPopup = (item) => {
   popupSection.classList.toggle('popup');
   popupSection.classList.toggle('popup-section');
-  for (let i = 0; i < popupTitle.length; i += 1) {
+  for (let i = 0; i < projects.length; i += 1) {
     if (item.target === popupBtn[i]) {
-      newTitle.textContent = popupObj[`Project${i}`].title;
+      newTitle.textContent = "projects[i].name";
+      newDescription.textContent = projects[i].description;
+      for (let j = 0; j < projects[i].technologies.length; j += 1) {
+        const newTechnoItem = document.createElement('h6');
+        newTechnoItem.textContent = projects[i].technologies[j];
+        newTechno.appendChild(newTechnoItem);
+      }
+      firstBtn.href = projects[i].livelink;
+      secondBtn.href = projects[i].sourceLink;
     }
   }
 };
@@ -104,3 +149,4 @@ popupBtn.forEach((item) => { item.addEventListener('click', openPopup); });
 
 const closeBtn = document.querySelectorAll('.new-close-img');
 closeBtn.forEach((item) => { item.addEventListener('click', openPopup); });
+
