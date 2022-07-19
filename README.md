@@ -54,11 +54,13 @@ You can see [my page live here](https://sahar-abdelsamad.github.io/Portfolio/)
 - GitHub: [@denscholar](https://github.com/denscholar)
 - Twitter: [@denscholar](https://twitter.com/dennisakagha)
 - LinkedIn: [Dennis Akagha](https://www.linkedin.com/in/dennisakagha/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Sahar-AbdelSamad/Portfolio-setup-and-mobile-version-skeleton/issues).
+Feel free to check the [issues page](https://github.com/Sahar-AbdelSamad/Portfolio/issues).
 
 ## Show your support
 
