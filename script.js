@@ -74,6 +74,7 @@ for (let i = 0; i < projects.length; i += 1) {
   workSection.innerHTML+=
   `<div class="item">
   <div class="flex-container">
+    <img class="project-img" src=${projects[i].image}>
     <h4>${projects[i].name}</h4>
     <div class="tags">
         <h6>${projects[i].technologies[0]}</h6>

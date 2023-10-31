@@ -182,12 +182,16 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 222px;
+  height:472px;
   background: #fff;
   border-radius: 8px;
-  position: relative;
-  top: 249px;
-  left: 0;
+}
+
+.project-img {
+  height: 249px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .item h4 {
