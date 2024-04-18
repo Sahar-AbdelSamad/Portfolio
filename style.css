@@ -35,6 +35,7 @@
   top: 0;
   background: white;
   z-index: 1000;
+  height: 50px;
 }
 
 .toolbar::after {
@@ -134,18 +135,6 @@ li {
   transition: transform 0.1s;
 }
 
-.lets-connect li:hover {
-  transform: scale(1.2);
-}
-
-.btn-secondary {
-  width: 40px;
-  height: 40px;
-  border-radius: 32px;
-  border: 1px solid #dfe1e6;
-  margin-bottom: 22px;
-}
-
 /* Works Section */
 
 .works {
@@ -166,7 +155,8 @@ li {
   grid-template-rows: repeat(6, 1fr);
   grid-row-gap: 24px;
   justify-content: center;
-  align-items: center;
+  align-items: center;max-width: 90%;
+  margin: auto;
   margin-top: 62px;
 }
 
@@ -272,8 +262,8 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 24px;
-  margin-top: 59px;
-  margin-bottom: 0;
+  margin: 59px auto 0;
+  max-width: 90%;
   padding: 0;
 }
 
@@ -323,7 +313,6 @@ li {
 
 .button:hover {
   box-shadow: 1px 4px 30px rgba(16, 227, 128, 0.384);
-  transform: scale(1.01);
 }
 
 .button:active {
@@ -334,7 +323,8 @@ li {
 
 .form {
   background: url(Images/Frame.svg) 100% 100% no-repeat;
-  padding-top: 35px;
+  padding-top: 45px;
+  margin-top: 50px;
 }
 
 .form h2 {
@@ -370,12 +360,10 @@ textarea {
   transition: transform 0.06s;
 }
 
-input:hover {
+input:focus,
+textarea:focus {
   transform: scale(1.01);
-}
-
-input:focus {
-  transform: scale(1.01);
+  outline: none;
 }
 
 textarea {
@@ -384,14 +372,6 @@ textarea {
   color: #091e42;
   margin: 24px 6.5%;
   width: 87%;
-}
-
-textarea:hover {
-  transform: scale(1.01);
-}
-
-textarea:focus {
-  transform: scale(1.01);
 }
 
 .button-form {
@@ -526,10 +506,6 @@ textarea:focus {
   100% { bottom: 0; }
 }
 
-.item:hover {
-  transform: scale(1.03);
-}
-
 /* Desktop Version */
 
 @media screen and (min-width: 992px) {
@@ -574,7 +550,7 @@ textarea:focus {
     height: 40px;
     font-family: Inter, sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
     color: #344563;
     padding: 10px 12px;
@@ -583,7 +559,7 @@ textarea:focus {
   }
 
   .nav-ul-desktop a:hover {
-    font-size: 18px;
+    border-bottom: 1px solid #172b4d;
   }
 
   .nav-ul-desktop a:focus {
@@ -626,11 +602,6 @@ textarea:focus {
     height: 40px;
     margin: 0;
     margin-bottom: 74px;
-  }
-
-  .btn-secondary {
-    width: 40px;
-    margin-bottom: 495px;
   }
 
   /* Works Section */
@@ -692,7 +663,8 @@ textarea:focus {
     grid-template-columns: 9.65% 32% 1.7% 47% 9.65%;
     grid-template-rows: 1fr;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 110px;
+    margin-top: 80px;
   }
 
   .form h2 {
