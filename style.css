@@ -70,7 +70,7 @@
 
 .open-mobile-menu {
   width: 62px;
-  padding: 17px 30px 0 0;
+  padding: 17px 25px 0 0;
   cursor: pointer;
 }
 
@@ -169,7 +169,7 @@ li {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  max-width: 310px;
+  max-width: 350px;
   margin: auto;
 }
 
