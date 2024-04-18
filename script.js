@@ -21,26 +21,34 @@ const workSection = document.querySelector('.grid-container');
 
 const projects = [
   {
-    name: "Rent Me",
-    description: "Rent me is a full-stack project, the front-end is a responsive app that lists houses. A user can see the details of a specific house, and reserve it by clicking on the RESERVE button. The user can also access the RESERVATIONS page from the navigation panel, and add or delete a house. The back-end contains documentation for the API made with Postman. ",
-    image: "./Images/RentMe.png",
-    technologies: ["Ruby on Rails", "PostgreSQL", "React", "Redux"],
-    sourcelink: "https://github.com/Sahar-AbdelSamad/house-booking-front-end",
-    livelink: "https://rent-me-capstone-project.netlify.app/",
+    name: "Space Travelers ",
+    description: "This web application retrieves real live data from the SpaceX API. It provides commercial and scientific space travel services, by allowing users to book rockets and join selected space missions.  ",
+    image: "./Images/SpaceTravelers.png",
+    technologies: ["JavaScript", "Bootstrap", "React", "Redux"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/space-travelers",
+    livelink: "https://space-travelers-hub-pair-programming.netlify.app/",
   },
   {
-    name: "Budget App",
-    description: "The Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. ",
-    image: "./Images/BudgetApp.png",
-    technologies: ["Ruby on Rails", "Ruby", "PostgreSQL", "Rspec"],
-    sourcelink: "https://github.com/Sahar-AbdelSamad/budget-app",
-    livelink: "https://my-budget-sahar.herokuapp.com/",
+    name: "Delicious Recipes",
+    description: "Delicious Recipes is a Webpack project, it retrieves information from two different APIs: Meals DB and Involvement API. The homepage lists some recipes that we can LIKE. The comment button opens a popup window, shows us more information about the recipe, and allows us to leave a comment.",
+    image: "./Images/delicious-recipes.png",
+    technologies: ["JavaScript", "CSS", "WebPack", "jest"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/delicious-recipes",
+    livelink: "https://sahar-abdelsamad.github.io/delicious-recipes/",
+  },
+  {
+    name: "Leaderboard",
+    description: "The leaderboard website displays scores submitted by different players. It also allows you to submit your score. It preserves all data thanks to the external Leaderboard API service. ",
+    image: "./Images/Leaderboard.png",
+    technologies: ["Javascript", "CSS3", "webpack", "api-rest"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/Leaderboard",
+    livelink: "https://sahar-abdelsamad.github.io/Leaderboard/",
   },
   {
     name: "Recipe App",
     description: "The Recipe allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.  ",
     image: "./Images/RecipeApp.png",
-    technologies: ["Ruby on Rails", "Ruby", "PostgreSQL", "Rspec"],
+    technologies: ["ROR", "Ruby", "PostgreSQL", "Rspec"],
     sourcelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
     livelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
   },
@@ -59,14 +67,6 @@ const projects = [
     technologies: ["React", "Redux", "Webpack", "CSS3"],
     sourcelink: "https://github.com/Sahar-AbdelSamad/company-profile",
     livelink: "https://sahar-abdelsamad.github.io/company-profile/",
-  },
-  {
-    name: "Delicious Recipes",
-    description: "Delicious Recipes is a Webpack project, it retrieves information from two different APIs: Meals DB and Involvement API. The homepage lists some recipes that we can LIKE. The comment button opens a popup window, shows us more information about the recipe, and allows us to leave a comment.",
-    image: "./Images/delicious-recipes.png",
-    technologies: ["JavaScript", "CSS", "WebPack", "jest"],
-    sourcelink: "https://github.com/Sahar-AbdelSamad/delicious-recipes",
-    livelink: "https://sahar-abdelsamad.github.io/delicious-recipes/",
   },
 ];
 
@@ -93,7 +93,7 @@ document.body.appendChild(popupSection);
 
 const newCloseImg = document.createElement('img');
 newCloseImg.className = ('new-close-img');
-newCloseImg.src = ('Images/popup-close.svg');
+newCloseImg.src = ('Images/close.svg');
 newCloseImg.alt = ('Close icon');
 popupSection.appendChild(newCloseImg);
 

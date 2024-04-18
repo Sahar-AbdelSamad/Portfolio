@@ -131,10 +131,6 @@ li {
   list-style: none;
 }
 
-.lets-connect li {
-  transition: transform 0.1s;
-}
-
 /* Works Section */
 
 .works {
@@ -165,7 +161,8 @@ li {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  transition: transform 0.1s;
+  max-width: 300px;
+  margin: auto;
 }
 
 .flex-container {
@@ -229,7 +226,7 @@ li {
   color: #fff;
   margin-top: 29px;
   text-decoration: none;
-  transition: tranform 1.1s;
+  cursor: pointer;
 }
 
 /* About Myself section */
@@ -443,6 +440,8 @@ textarea {
 
 .new-project-img {
   height: 40vh;
+  width: auto;
+  margin: auto;
 }
 
 .new-title {
@@ -555,7 +554,6 @@ textarea {
     color: #344563;
     padding: 10px 12px;
     text-decoration: none;
-    transition: font-size 0.1s, color 0.1s, background-color 0.1s;
   }
 
   .nav-ul-desktop a:hover {
@@ -728,7 +726,7 @@ textarea {
     overflow: scroll;
     background-color: #fff;
     z-index: 9999;
-    padding: 12px 15% 0 15%;
+    padding: 12px 20% 0 20%;
     display: block;
   }
 
@@ -739,14 +737,14 @@ textarea {
   }
 
   .new-close-img {
-    position: absolute;
-    right: 15%;
+    display: block;
+    margin-left: auto;
   }
 
   .new-project-img {
-    width: 100%;
-    height: auto;
+    height: 50vh;
     padding-bottom: 24px;
+    display: block;
   }
 
   .new-title {
@@ -756,7 +754,6 @@ textarea {
     font-size: 32px;
     line-height: 44px;
     float: left;
-    display: block;
   }
 
   .new-btns {
