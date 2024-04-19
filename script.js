@@ -17,7 +17,7 @@ menuButton.forEach((item) => {
 
 // modal windows
 
-const workSection = document.querySelector('.grid-container');
+const workSection = document.querySelector('.selected-projects');
 
 const projects = [
   {
@@ -32,7 +32,7 @@ const projects = [
     name: "Delicious Recipes",
     description: "Delicious Recipes is a Webpack project, it retrieves information from two different APIs: Meals DB and Involvement API. The homepage lists some recipes that we can LIKE. The comment button opens a popup window, shows us more information about the recipe, and allows us to leave a comment.",
     image: "./Images/delicious-recipes.png",
-    technologies: ["JavaScript", "CSS", "WebPack", "jest"],
+    technologies: ["JavaScript", "CSS3", "WebPack", "jest"],
     sourcelink: "https://github.com/Sahar-AbdelSamad/delicious-recipes",
     livelink: "https://sahar-abdelsamad.github.io/delicious-recipes/",
   },
@@ -53,14 +53,6 @@ const projects = [
     livelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
   },
   {
-    name: "Catalog of Stuff",
-    description: "This is a Ruby Group Capstone Project meant to wrap the concepts of Ruby language and SQL Databases, creating an OOP project based on a UML diagram. It is a console app that will help us keep a record of different types of things we won: books, music albums, and games.",
-    image: "./Images/catalog-of-stuff.png",
-    technologies: ["Ruby", "PostgreSQL", 'Rspec', 'OOP'],
-    sourcelink: "https://github.com/Sahar-AbdelSamad/catalog-of-stuff",
-    livelink: "https://github.com/Sahar-AbdelSamad/catalog-of-stuff",
-  },
-  {
     name: "Company Profile",
     description: "This web application retrieves real live data from the Financial modeling prep API. It provides financial information about companies listed on Nasdaq 100 and Dow Jones Market indexes. All these companies are listed on the Home page. Users can filter these companies by searching for a specific company or by choosing one from the dropdown. ",
     image: "./Images/CompanyProfile.png",
@@ -68,6 +60,14 @@ const projects = [
     sourcelink: "https://github.com/Sahar-AbdelSamad/company-profile",
     livelink: "https://sahar-abdelsamad.github.io/company-profile/",
   },
+  {
+    name: "Catalog of Stuff",
+    description: "This is a Ruby Group Capstone Project meant to wrap the concepts of Ruby language and SQL Databases, creating an OOP project based on a UML diagram. It is a console app that will help us keep a record of different types of things we won: books, music albums, and games.",
+    image: "./Images/catalog-of-stuff.png",
+    technologies: ["Ruby", "PostgreSQL", 'Rspec', 'OOP'],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/catalog-of-stuff",
+    livelink: "https://github.com/Sahar-AbdelSamad/catalog-of-stuff",
+  }
 ];
 
 for (let i = 0; i < projects.length; i += 1) {
@@ -122,6 +122,12 @@ const newTechno = document.createElement('div');
 newTechno.classList.add('new-techno', 'tags');
 popupSection.appendChild(newTechno);
 
+for (let j = 0; j < 4; j += 1) {
+  const newTechnoItem = document.createElement('h6');
+  newTechnoItem.classList.add('newtechItem');
+  newTechno.appendChild(newTechnoItem);
+}
+
 const newDescription = document.createElement('p');
 newDescription.className = ('new-description');
 popupSection.appendChild(newDescription);
@@ -134,10 +140,9 @@ const openPopup = (item) => {
       newTitle.textContent = `${projects[i].name}`;
       newProjectImg.src = `${projects[i].image}`;
       newDescription.textContent = projects[i].description;
-      for (let j = 0; j < projects[i].technologies.length; j += 1) {
-        const newTechnoItem = document.createElement('h6');
-        newTechnoItem.textContent = projects[i].technologies[j];
-        newTechno.appendChild(newTechnoItem);
+      const techItem = document.querySelectorAll('.newtechItem');
+      for (let j = 0; j < 4; j += 1) {
+        techItem[j].textContent = projects[i].technologies[j];
       }
       firstBtn.href = projects[i].livelink;
       secondBtn.href = projects[i].sourcelink;

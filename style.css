@@ -153,17 +153,6 @@ li {
   margin: 24px auto 0;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  grid-row-gap: 24px;
-  justify-content: center;
-  align-items: center;max-width: 90%;
-  margin: auto;
-  margin-top: 62px;
-}
-
 .item {
   height: 474px;
   background: #ebf0ee;
@@ -187,6 +176,7 @@ li {
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-bottom: 1px solid #d0d9d4;
 }
 
 .item h4 {
@@ -264,7 +254,7 @@ li {
 
 .categories {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   margin: 59px auto 0;
@@ -284,7 +274,8 @@ li {
 }
 
 .about-myself-items {
-  height: 352px;
+  height: 384px;
+  width: 300px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -302,6 +293,7 @@ li {
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .tags-about-me h6 {
@@ -621,16 +613,6 @@ textarea {
     display: none;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1.7vw;
-    grid-row-gap: 2.2vw;
-    margin: 52px auto 192px;
-    width: 95vw;
-  }
-
   .item {
     margin: 0;
   }
@@ -651,15 +633,7 @@ textarea {
   }
 
   .categories {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
     margin: 52px auto 164px;
-    width: 95vw;
-  }
-
-  .about-myself-items {
-    width: calc((100% - 24px) / 3);
   }
 
   /* Contact form section */
