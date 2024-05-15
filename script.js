@@ -21,6 +21,14 @@ const workSection = document.querySelector('.selected-projects');
 
 const projects = [
   {
+    name: "Little Lemon",
+    description: "This Capstone project was built as part of the Meta Front-End Developer Specialization. To demonstrate multiple skills gained, by solving an authentic real-world problem. It's a restaurant's website. We can make a reservation through the website. We can select the reservation date, time, number of diners... We can also Edit or Cancel our booking.",
+    image: "./Images/little-lemon.png",
+    technologies: ["JavaScript", "Bootstrap", "React", "Redux"],
+    sourcelink: "https://github.com/Sahar-AbdelSamad/little-lemon",
+    livelink: "https://sahar-abdelsamad.github.io/little-lemon/",
+  },
+  {
     name: "Space Travelers ",
     description: "This web application retrieves real live data from the SpaceX API. It provides commercial and scientific space travel services, by allowing users to book rockets and join selected space missions.  ",
     image: "./Images/SpaceTravelers.png",
@@ -43,14 +51,6 @@ const projects = [
     technologies: ["Javascript", "CSS3", "webpack", "api-rest"],
     sourcelink: "https://github.com/Sahar-AbdelSamad/Leaderboard",
     livelink: "https://sahar-abdelsamad.github.io/Leaderboard/",
-  },
-  {
-    name: "Recipe App",
-    description: "The Recipe allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.  ",
-    image: "./Images/RecipeApp.png",
-    technologies: ["ROR", "Ruby", "PostgreSQL", "Rspec"],
-    sourcelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
-    livelink: "https://github.com/Sahar-AbdelSamad/Rails-recipe-app",
   },
   {
     name: "Company Profile",
@@ -111,10 +111,12 @@ newBtns.className = ('new-btns');
 popupSection.appendChild(newBtns);
 const firstBtn = document.createElement('a');
 firstBtn.className = ('button');
+firstBtn.setAttribute('target', '_blank');
 firstBtn.textContent = ('See Live');
 newBtns.appendChild(firstBtn);
 const secondBtn = document.createElement('a');
 secondBtn.className = ('button');
+secondBtn.setAttribute('target', '_blank');
 secondBtn.textContent = ('See Source');
 newBtns.appendChild(secondBtn);
 
